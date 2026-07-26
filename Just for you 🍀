@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forever Mitu ❤️ Sabbir</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="stars"></div>
+
+<section class="welcome">
+
+    <h3>✨ A Special Surprise ✨</h3>
+
+    <h1>Mitu ❤️ Sabbir</h1>
+
+    <p>Every love story is beautiful...</p>
+
+    <button id="openBtn">
+        Tap To Open ❤️
+    </button>
+
+</section>
+
+
+<section id="giftSection">
+
+<div class="gift-box">
+🎁
+</div>
+
+<h2>Open Your Gift</h2>
+
+</section>
+
+
+
+<section id="gallery">
+
+<h2>Our Beautiful Memories ❤️</h2>
+
+
+</section>
+
+
+
+<section id="letter">
+
+<h1>💌</h1>
+
+<h2>Dear Mitu,</h2>
+
+<p>
+
+Every day with you is
+
+my favourite day.
+
+You are my happiness,
+
+my peace,
+
+my everything.
+
+Thank you for coming
+
+into my life.
+
+I don't promise
+
+a perfect life...
+
+But
+
+I promise
+
+I'll always love you.
+
+Forever Yours,
+
+❤️ Sabbir ❤️
+
+</p>
+
+</section>
+
+
+
+
+<section id="counter">
+
+<h2>Together Since</h2>
+
+<h1>11 June 2025 ❤️</h1>
+
+<p id="days"></p>
+
+</section>
+
+
+
+
+<section id="final">
+
+<h1>
+
+I LOVE YOU
+
+MITU ❤️
+
+</h1>
+
+<h3>
+
+Forever Starts Here...
+
+</h3>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(180deg,#030712,#091540,#111827);
+
+overflow-x:hidden;
+
+color:white;
+
+text-align:center;
+
+}
+
+section{
+
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+padding:30px;
+
+}
+
+#stars{
+
+position:fixed;
+
+width:100%;
+
+height:100%;
+
+background:url("https://www.transparenttextures.com/patterns/stardust.png");
+
+opacity:.35;
+
+animation:moveStars 120s linear infinite;
+
+z-index:-1;
+
+}
+
+@keyframes moveStars{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-1200px);
+
+}
+
+}
+
+.welcome h1{
+
+font-size:58px;
+
+color:#ff5ca8;
+
+text-shadow:0 0 25px hotpink;
+
+margin-bottom:20px;
+
+animation:glow 2s infinite alternate;
+
+}
+
+@keyframes glow{
+
+from{
+
+text-shadow:0 0 10px hotpink;
+
+}
+
+to{
+
+text-shadow:0 0 40px deeppink;
+
+}
+
+}
+
+.welcome h3{
+
+font-size:28px;
+
+margin-bottom:15px;
+
+}
+
+.welcome p{
+
+font-size:22px;
+
+opacity:.9;
+
+margin-bottom:30px;
+
+}
+
+button{
+
+padding:16px 40px;
+
+font-size:22px;
+
+border:none;
+
+border-radius:50px;
+
+background:#ff4d88;
+
+color:white;
+
+cursor:pointer;
+
+transition:.4s;
+
+box-shadow:0 0 20px hotpink;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 35px hotpink;
+
+}
+
+#giftSection{
+
+display:none;
+
+}
+
+.gift-box{
+
+font-size:120px;
+
+cursor:pointer;
+
+animation:shake 1.5s infinite;
+
+}
+
+@keyframes shake{
+
+0%{transform:rotate(-5deg);}
+
+50%{transform:rotate(5deg);}
+
+100%{transform:rotate(-5deg);}
+
+}
+
+#gallery{
+
+display:none;
+
+}
+
+.photo{
+
+width:280px;
+
+border-radius:20px;
+
+margin:20px;
+
+box-shadow:0 0 30px hotpink;
+
+transition:.5s;
+
+}
+
+.photo:hover{
+
+transform:scale(1.05);
+
+}
+
+#letter{
+
+display:none;
+
+max-width:800px;
+
+}
+
+#letter h2{
+
+margin:20px;
+
+color:#ff7ab8;
+
+}
+
+#letter p{
+
+font-size:22px;
+
+line-height:40px;
+
+background:rgba(255,255,255,.08);
+
+padding:35px;
+
+border-radius:25px;
+
+backdrop-filter:blur(15px);
+
+}
+
+#counter{
+
+display:none;
+
+}
+
+#counter h1{
+
+font-size:45px;
+
+margin:20px;
+
+color:#ff6ca5;
+
+}
+
+#days{
+
+font-size:35px;
+
+}
+
+#final{
+
+display:none;
+
+}
+
+#final h1{
+
+font-size:65px;
+
+color:#ff4fa0;
+
+text-shadow:0 0 30px deeppink;
+
+animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+50%{
+
+transform:scale(1.08);
+
+}
+
+}
+
+#final h3{
+
+margin-top:25px;
+
+font-size:28px;
+
+}
+
+.heart{
+
+position:fixed;
+
+color:#ff4d88;
+
+font-size:25px;
+
+animation:fly 7s linear forwards;
+
+}
+
+@keyframes fly{
+
+0%{
+
+transform:translateY(110vh);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-20vh);
+
+opacity:0;
+
+}
+
+}
+// Forever Mitu ❤️ Sabbir
+
+const openBtn = document.getElementById("openBtn");
+const gift = document.querySelector(".gift-box");
+
+const welcome = document.querySelector(".welcome");
+const giftSection = document.getElementById("giftSection");
+const gallery = document.getElementById("gallery");
+const letter = document.getElementById("letter");
+const counter = document.getElementById("counter");
+const finalPage = document.getElementById("final");
+
+openBtn.onclick = ()=>{
+
+welcome.style.display="none";
+
+giftSection.style.display="flex";
+
+}
+
+
+
+gift.onclick=()=>{
+
+gift.innerHTML="💖";
+
+gift.style.animation="none";
+
+setTimeout(()=>{
+
+giftSection.style.display="none";
+
+gallery.style.display="flex";
+
+startHearts();
+
+},1200);
+
+}
+
+
+
+const photos=document.querySelectorAll(".photo");
+
+let current=0;
+
+photos.forEach((p)=>{
+
+p.style.display="none";
+
+})
+
+
+
+function showPhoto(){
+
+photos.forEach((p)=>{
+
+p.style.display="none";
+
+})
+
+photos[current].style.display="block";
+
+photos[current].style.animation="fade 2s";
+
+current++;
+
+if(current<photos.length){
+
+setTimeout(showPhoto,3500);
+
+}else{
+
+setTimeout(()=>{
+
+gallery.style.display="none";
+
+letter.style.display="flex";
+
+typeLetter();
+
+},3500);
+
+}
+
+}
+
+setTimeout(showPhoto,800);
+
+
+
+const message=`
+
+Dear Mitu,
+
+Every day with you
+
+is the most beautiful
+
+chapter of my life.
+
+Your smile
+
+is my peace.
+
+Your love
+
+is my strength.
+
+I don't know
+
+what tomorrow brings,
+
+but I know
+
+I want your hand
+
+for the rest
+
+of my life.
+
+Forever Yours,
+
+❤️ Sabbir ❤️
+
+`;
+
+let i=0;
+
+function typeLetter(){
+
+const p=document.querySelector("#letter p");
+
+p.innerHTML="";
+
+const typing=setInterval(()=>{
+
+p.innerHTML+=message.charAt(i);
+
+i++;
+
+if(i>=message.length){
+
+clearInterval(typing);
+
+setTimeout(()=>{
+
+letter.style.display="none";
+
+counter.style.display="flex";
+
+startCounter();
+
+},5000);
+
+}
+
+},45);
+
+}
+function startCounter(){
+
+const startDate = new Date("2025-06-11");
+
+function update(){
+
+const today = new Date();
+
+const diff = today - startDate;
+
+const days = Math.floor(diff / (1000*60*60*24));
+
+document.getElementById("days").innerHTML =
+days + " Days Together ❤️";
+
+}
+
+update();
+
+setInterval(update,1000);
+
+setTimeout(()=>{
+
+counter.style.display="none";
+
+finalPage.style.display="flex";
+
+confetti();
+
+},6000);
+
+}
+
+
+
+function startHearts(){
+
+setInterval(()=>{
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(20+Math.random()*40)+"px";
+
+heart.style.animationDuration=(4+Math.random()*4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},7000);
+
+},250);
+
+}
+
+
+
+function confetti(){
+
+for(let i=0;i<150;i++){
+
+let c=document.createElement("div");
+
+c.innerHTML=["❤️","💖","💕","💗","🌹","✨"][Math.floor(Math.random()*6)];
+
+c.style.position="fixed";
+
+c.style.left=Math.random()*100+"vw";
+
+c.style.top="-30px";
+
+c.style.fontSize=(20+Math.random()*30)+"px";
+
+c.style.transition="6s linear";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{
+
+c.style.top="110vh";
+
+c.style.transform="rotate(720deg)";
+
+},50);
+
+setTimeout(()=>{
+
+c.remove();
+
+},6500);
+
+}
+
+}
+
+
+
+setInterval(()=>{
+
+const star=document.createElement("div");
+
+star.innerHTML="✦";
+
+star.style.position="fixed";
+
+star.style.left=Math.random()*100+"vw";
+
+star.style.top="-20px";
+
+star.style.color="white";
+
+star.style.opacity=Math.random();
+
+star.style.fontSize=(8+Math.random()*10)+"px";
+
+star.style.transition="5s linear";
+
+document.body.appendChild(star);
+
+setTimeout(()=>{
+
+star.style.top="110vh";
+
+star.style.left=(Math.random()*100)+"vw";
+
+},100);
+
+setTimeout(()=>{
+
+star.remove();
+
+},5200);
+
+},500);
+
+
+
+finalPage.addEventListener("click",()=>{
+
+for(let i=0;i<200;i++){
+
+const h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="💖";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.fontSize=(20+Math.random()*40)+"px";
+
+document.body.appendChild(h);
+
+setTimeout(()=>{
+
+h.remove();
+
+},7000);
+
+}
+
+});
